@@ -3,7 +3,7 @@ import config from './config'
 
 (async ()=> {
     try {
-        const db = await mongoose.connect(`mongodb+srv://${config.MONGO_HOST}/${config.MONGO_DATABASE}`, {
+        const db = await mongoose.connect(`mongodb://${config.MONGO_HOST}/${config.MONGO_DATABASE}`, {
         useUnifiedTopology: true,
         useNewUrlParser: true,
     });
